@@ -1,3 +1,8 @@
-def  reverse_each_word("Hello there, and how are you?")
-  puts reverse_each_word.each.reverse 
-  
+def reverse_each_word(string)
+  array = string.split(" ") #turn string into an array
+  nu_array = []
+  array.each do|string| #iterate over the array
+    nu_array << string.reverse #reverse each word in the array
+  end
+  nu_array.join(" ")
+end
